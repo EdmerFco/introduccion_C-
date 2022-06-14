@@ -1,0 +1,15 @@
+<connectionStrings>
+		<!--<add name="InstitutoConnection"
+			 connectionString="Data Source=DESKTOP-T7C66HM;Initial Catalog=InstitutoTich;User ID=sa;password=Pass2017"
+			 providerName="System.Data.SqlClient"
+     />
+		<add name="EmpresaConnection"
+			  connectionString="Data Source=DESKTOP-0F4MFSE;Initial Catalog=InstitutoTich;User ID=sa;password=Pass2017"
+			  providerName="System.Data.SqlClient"
+     />
+		<add name="LocalConnection"
+			  connectionString="Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=InstitutoTich;Integrated Security=True"
+			  providerName="System.Data.SqlClient"
+     />-->
+		
+</connectionStrings>

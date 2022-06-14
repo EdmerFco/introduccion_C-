@@ -1,0 +1,38 @@
+select *from Alumnos
+EXECUTE agregarAlumnos @nombre='xav',@primerapellido= 'xev', @segundoApellido= 'rom',
+      @correo= 'jav209@gmail.com',@telefono= '2225801012' ,@fechaNacimiento= '1995/05/06',
+	  @curp= 'EAGF630503HJCMWRD',@sueldoMensual= 25000,@idEstadoOrigen= 1 ,@idEstatus= 1; 
+
+EXECUTE consultarEAlumnos @id=-1
+
+  int id = Convert.ToInt32(Request.QueryString["id"] ?? "121");
+                Alumno alum = new Alumno();
+                List<Alumno> listAlu = new List<Alumno>();
+                listAlu = _listAlumnos.Consultar();
+                _listAlumnos.Eliminar(id);
+
+                alum.nombre = "ROB";
+                _listAlumnos.Actualizar(alum);
+				
+				EXECUTE actualizarAlumnos @id = 3,@nombre='JAV',@primerapellido= 'xev', @segundoApellido= 'rom',
+      @correo= 'jav209@gmail.com',@telefono= '2225801012' ,@fechaNacimiento= '1995/05/06',
+	  @curp= 'EAGF630503HJCMWRD',@sueldoMensual= 25000,@idEstadoOrigen= 1 ,@idEstatus= 1; 
+	  
+	  select * from Alumnos
+
+	  EXECUTE consultarEAlumnos @id=-1
+	  execute eliminarAlumnos @id=122
+	  
+	  
+	  
+	  <label for="idAlum">Id: </label> <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br>
+        <label for="nomAlum">Nombre: </label> <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><br>
+        <label for="priApeAlum">Primer Apellido: </label> <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox><br>
+        <label for="segApeAlum">Segundo Apellido: </label> <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox><br>
+        <label for="corrAlum">Correo: </label> <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox><br>
+        <label for="telAlum">Telefono: </label> <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox><br>
+        <label for="fecNacAlum">Fecha Nacimient: </label> <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox><br>
+        <label for="curpAlum">Curp: </label> <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox><br>
+        <label for="suelMenAlum">Sueldo Mensual: </label> <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox><br>
+        <label for="idEstado">Id Estado: </label> <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox><br>
+        <label for="idEstatus">Id Estatus: </label> <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox><br>
